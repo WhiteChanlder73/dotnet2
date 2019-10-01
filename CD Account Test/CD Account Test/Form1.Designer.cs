@@ -69,6 +69,7 @@
             this.createObjectButton.TabIndex = 6;
             this.createObjectButton.Text = "Create Object";
             this.createObjectButton.UseVisualStyleBackColor = true;
+            this.createObjectButton.Click += new System.EventHandler(this.createObjectButton_Click);
             // 
             // objectGroupBox
             // 
