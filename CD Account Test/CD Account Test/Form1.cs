@@ -46,5 +46,10 @@ namespace CD_Account_Test
             balanceLabel.Text = myAccount.Balance.ToString("c");
             maturityDateLabel.Text = myAccount.MaturityDate.ToString() ;
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
