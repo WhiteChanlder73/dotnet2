@@ -15,5 +15,37 @@ namespace Polymorphism
         {
             InitializeComponent();
         }
+
+        private void ShowAnimalInfo(Animal animal)
+        {
+            MessageBox.Show("Species: " + animal.Species);
+            animal.MakeSound();
+        }
+
+        private void createAnimalButton_Click(object sender, EventArgs e)
+        {
+            Animal myAnimal = new Animal("Regular animal");
+            ShowAnimalInfo(myAnimal);
+        }
+
+        private void createDogButton_Click(object sender, EventArgs e)
+        {
+            Dog myDog = new Dog("Fido");
+            MessageBox.Show("The dog's name is " + myDog.Name);
+            ShowAnimalInfo(myDog);
+        }
+
+        private void createCatButton_Click(object sender, EventArgs e)
+        {
+            Cat myCat = new Cat("Kitty");
+            MessageBox.Show("The cat's name is " + myCat.Name);
+            ShowAnimalInfo(myCat);
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
