@@ -21,7 +21,7 @@ namespace Computer_Science_Student
             // Variables to hold input 
             string name, id, track;
 
-            // Get the students name and ID 
+			// Some other stuff		
             name = nameTextBox.Text;
             id = idTextBox.Text;
 
@@ -40,6 +40,7 @@ namespace Computer_Science_Student
             requiredHoursLabel.Text = csStudent.RequiredHours.ToString("n1");
         }
 
+	//Pee pee poo poo 
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
