@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Multiform_Practice
 {
-    public partial class Form1 : Form
+    public partial class MessageForm : Form
     {
-        public Form1()
+        public MessageForm()
         {
             InitializeComponent();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
