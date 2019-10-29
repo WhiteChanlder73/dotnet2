@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Product_Lookup
+namespace Multiform_Products
 {
     static class Program
     {
@@ -14,10 +14,9 @@ namespace Product_Lookup
         [STAThread]
         static void Main()
         {
-            // John is lame
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new productLookupForm());
+            Application.Run(new MainForm());
         }
     }
 }
